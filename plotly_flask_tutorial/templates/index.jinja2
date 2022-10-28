@@ -1,0 +1,18 @@
+{% extends "layout.jinja2" %}
+
+{% block content %}
+<div class="card">
+  <img src="{{url_for('home',filename='images/reads.png')}}" class="logo"/>
+  <h1 class="site-title">{{ title }}</h1>
+  <a href="/dashapp/" class="dash-link">
+    <span>Embedded Plotly Dash</span>
+    <i class="fas fa-arrow-right"></i>
+  </a>
+</div>
+<div class="card">
+  <a href="/explainerdashboard/" class="dash-link">
+    <span>Embedded explainerdashboard app</span>
+    <i class="fas fa-arrow-right"></i>
+  </a>
+</div>
+{% endblock %}
